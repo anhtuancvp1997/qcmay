@@ -1,0 +1,258 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      8
+    ],
+    "Count": 9
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "Count": 40
+  },
+  "Formulas": {
+    "3,19": "COUNTA(V4)"
+  },
+  "AttachInfos": {
+    "2,21": {
+      "ListViewInfo": {
+        "Name": "Listview1",
+        "TableName": "vHREmployee2",
+        "RowIndex": 2,
+        "ColumnIndex": 21,
+        "RowCount": 6,
+        "ColumnCount": 17,
+        "TopCondition": null,
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2,
+        "DoNotLoadDataWhenLoadPage": true
+      }
+    },
+    "3,2": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "vHREmployee2",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "vHREmployee2",
+                "ColumnName": "EmpNo",
+                "GUID": "6581039c-9e5d-4ad4-9f25-27f3ae9a3982"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=NhapMaSoThe!C4"
+              }
+            },
+            "ID": "a4e52105947d45968649f2e324702dcd",
+            "BreakpointIdentity": "c1c516cf-39a0-472b-a7a7-5a073d4b3789"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=NhapMaSoThe!T4"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+                    "PassValueBack": true,
+                    "ReloadData": true,
+                    "PassQueryCondition": true,
+                    "BreakpointIdentity": "fb1fe4bf-b3e1-4e67-9c8e-930e10da5fd3"
+                  }
+                ],
+                "ID": "fb14777d-d361-46cc-9002-e891f4ecdf06"
+              }
+            ],
+            "BreakpointIdentity": "dfb0a834-11ee-43d2-9b9a-2833d18ff0a8"
+          }
+        ]
+      }
+    },
+    "3,14": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "SmartPhoneCommand.SmartPhoneCommand, SmartPhoneCommand",
+            "TargetCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=NhapMaSoThe!S4"
+            },
+            "BreakpointIdentity": "f62ca873-a631-42cf-9480-b64692f3e848"
+          }
+        ],
+        "TemplateKey": "Style9",
+        "Icon": {
+          "Name": "Mobile/433_qr_code_2.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        },
+        "IconSize": 36.0
+      }
+    },
+    "3,18": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=NhapMaSoThe!C4"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=LEFT(NhapMaSoThe!S4,FIND(CHAR(10),NhapMaSoThe!S4)-1)"
+                }
+              }
+            ],
+            "BreakpointIdentity": "e1c3662d-8842-4e84-b54a-c80f117d9b74"
+          }
+        ]
+      }
+    },
+    "3,21": {
+      "BindingInfo": {
+        "TableName": "vHREmployee2",
+        "ColumnName": "EmpNo",
+        "GUID": "74ecab54-2c00-4b13-8747-caffc7877818"
+      }
+    },
+    "3,27": {
+      "BindingInfo": {
+        "TableName": "vHREmployee2",
+        "ColumnName": "DeptCode",
+        "GUID": "7769a3bf-a3f9-43fc-8b78-bd45aada5458"
+      }
+    },
+    "3,34": {
+      "BindingInfo": {
+        "TableName": "vHREmployee2",
+        "ColumnName": "FacCode",
+        "GUID": "831296d4-13c3-4c6b-96a7-6ce7c26f252b"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "3,2,2,12",
+    "3,14,2,2",
+    "4,21,4,17",
+    "3,21,1,6",
+    "2,21,1,6",
+    "3,27,1,7",
+    "2,27,1,7",
+    "3,34,1,4",
+    "2,34,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "vHREmployee2"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//XmMyn8Tiyu0K8kkQy5Re+r9iREgtKR+TBXTL82Pqr6qvH8PZnUQQP47MiojV1Mn5V8nlx5ZlONA96wAsaLNtY9OK33UIOjTZr0NA6VcZLoXjfOXhG0oHJwX3q7Wj4CIAIQNTzqhrL/6zAyMIoYH6DDkwJjG54TKs9JBttXOxm9G24CR8HDfD9YiWXJkC4sCcbj7gySYMz4ao3sqRxSIp0MPDIQxmsQqpPu6MMb5z26HAXpXuA6oetanmqtAm5JJrNML99GfdwFQTJ2tGyymPYNY+3aUImhTubYvOY5OSzWB5fM4pXt5WohS25WaKb/OfJV50YGbQRU4FdPYsP+OjLM0qfwIMpn0gEuGZnZr6TqoNluhVu1NgOVS3VTxhVeQXvwvgi/vmTLoD3LjFXIWmuESMy/ub25DfXPraa8i2hGPGZFFBbaRJVVGzsPqBIf5til5BexdVUajrq5dw6wfOQ7gZ9r0tc3+0c0jKt5g6QbWmFfvV6NxTgIul2Trpsv9AzCaF2Bi8AXjUnuFwPXl4jr9+hijPHtAq2P2hEQwrwFhjTYzEAWdbEZsa8jwtp9/atctBaBiNxz7dN30rmXIsw7l+1Id4eZIyZDaZxqVw3NWLVXuubc775uVqL8ECpttU7WqPOzTB0ng14aszxtoLH6Zw1s5Tr+p8gdaOUKx964wjCUZkyks6elQhVV7vyhmHXvrmfMzTeqXq6LS+rRS7qhsAHY80AqVVBAoPnAacrXNquIRYhOyqAF6JpYYMNlsXE5c6bzfrugRwHq9/zi336RShUh1weF+qeGGtmXVPLMF9RwcBqlDsiVnJIuTxfp96yNvbpGV0y8X4Homd2ooc7QTPD+3CdLQzNWZIg/pCBHrSuYketcCDfJXU/SlzS1hYHOEGgCY4K0fXqS/kA97cjQ==|920

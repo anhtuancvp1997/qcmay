@@ -1,0 +1,33 @@
+{
+  "Name": "VW_BRAND",
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "VARCHAR2",
+      "MaxLength": -1,
+      "Name": "BRAND",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "VARCHAR2",
+      "MaxLength": -1,
+      "Name": "BRAND_NAME",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "DataBaseType": "6db454c0-531c-4395-9122-921a18942902",
+    "ConnectionId": "Oracle1",
+    "SourceTableName": "VW_BRAND",
+    "SourceTableSchema": "",
+    "CreateViewSql": "SELECT DISTINCT A.MERCHANT BRAND,B.NAME_Q_S BRAND_NAME\nFROM VW_SE_ZS_QRY@VNDB A JOIN SE_CUST@VNDB B ON A.MERCHANT=B.CUST_ID\nWHERE TO_CHAR(A.SE_DAY,'YYYYMMDD')>=TO_CHAR(add_months(SYSDATE,-6),'YYYYMMDD')\nAND A.STATUS>0\n\n ",
+    "ViewInfo": {
+      "ViewName": "VW_BRAND",
+      "IsUpdatable": true,
+      "QueryColumns": []
+    }
+  },
+  "Relations": [],
+  "Indexes": []
+}

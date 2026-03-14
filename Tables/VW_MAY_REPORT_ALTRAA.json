@@ -1,0 +1,133 @@
+{
+  "Name": "VW_MAY_REPORT_ALTRAA",
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "NVARCHAR2",
+      "MaxLength": -1,
+      "Name": "ERRORCODE",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "NVARCHAR2",
+      "MaxLength": -1,
+      "Name": "DEPARTMENTID",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "NVARCHAR2",
+      "MaxLength": -1,
+      "Name": "STYLE_LIST",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "DATE",
+      "MaxLength": -1,
+      "Name": "DATETIME",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "NUMBER",
+      "MaxLength": -1,
+      "Name": "TIME1",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "NUMBER",
+      "MaxLength": -1,
+      "Name": "TIME2",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "NUMBER",
+      "MaxLength": -1,
+      "Name": "TIME3",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "NUMBER",
+      "MaxLength": -1,
+      "Name": "TIME4",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "NUMBER",
+      "MaxLength": -1,
+      "Name": "TIME5",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "NUMBER",
+      "MaxLength": -1,
+      "Name": "TIME6",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "NUMBER",
+      "MaxLength": -1,
+      "Name": "TIME7",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "NUMBER",
+      "MaxLength": -1,
+      "Name": "TIME8",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "NUMBER",
+      "MaxLength": -1,
+      "Name": "TIME9",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "NUMBER",
+      "MaxLength": -1,
+      "Name": "TIME10",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "NUMBER",
+      "MaxLength": -1,
+      "Name": "SUM_TOTAL",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "NVARCHAR2",
+      "MaxLength": -1,
+      "Name": "ERRORNAME_VN",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "DataBaseType": "6db454c0-531c-4395-9122-921a18942902",
+    "ConnectionId": "Oracle3",
+    "SourceTableName": "VW_MAY_REPORT_ALTRAA",
+    "SourceTableSchema": "",
+    "CreateViewSql": "WITH style_list_cte AS (\n    SELECT\n        DEPARTMENTID,\n        DATETIME,\n        TO_NCHAR(\n            RTRIM(\n                XMLAGG(\n                    XMLELEMENT(e, STYLE || ',').EXTRACT('//text()')\n                    ORDER BY STYLE\n                ).GetClobVal(),\n                ','\n            )\n        ) AS STYLE_LIST\n    FROM (\n        SELECT DISTINCT\n            DEPARTMENTID,\n            TRUNC(INSERTDATETIME) AS DATETIME,\n            STYLE\n        FROM may_errordetailtest\n        WHERE SOLUONG > 0 AND STYLE IS NOT NULL\n    )\n    GROUP BY DEPARTMENTID, DATETIME\n),\n\ndata_cte AS (\n    SELECT\n        d.ERRORCODE,\n        d.DEPARTMENTID,\n        TRUNC(d.INSERTDATETIME) AS DATETIME,\n        SUM(CASE WHEN TO_CHAR(d.INSERTDATETIME, 'HH24:MI:ss') BETWEEN '07:30:01' AND '08:30:00' THEN d.SOLUONG ELSE 0 END) AS TIME1,\n        SUM(CASE WHEN TO_CHAR(d.INSERTDATETIME, 'HH24:MI:ss') BETWEEN '08:30:01' AND '09:30:00' THEN d.SOLUONG ELSE 0 END) AS TIME2,\n        SUM(CASE WHEN TO_CHAR(d.INSERTDATETIME, 'HH24:MI:ss') BETWEEN '09:30:01' AND '10:30:00' THEN d.SOLUONG ELSE 0 END) AS TIME3,\n        SUM(CASE WHEN TO_CHAR(d.INSERTDATETIME, 'HH24:MI:ss') BETWEEN '10:30:01' AND '11:35:00' THEN d.SOLUONG ELSE 0 END) AS TIME4,\n        SUM(CASE WHEN TO_CHAR(d.INSERTDATETIME, 'HH24:MI:ss') BETWEEN '12:30:01' AND '13:30:00' THEN d.SOLUONG ELSE 0 END) AS TIME5,\n        SUM(CASE WHEN TO_CHAR(d.INSERTDATETIME, 'HH24:MI:ss') BETWEEN '13:30:01' AND '14:30:00' THEN d.SOLUONG ELSE 0 END) AS TIME6,\n        SUM(CASE WHEN TO_CHAR(d.INSERTDATETIME, 'HH24:MI:ss') BETWEEN '14:30:01' AND '15:30:00' THEN d.SOLUONG ELSE 0 END) AS TIME7,\n        SUM(CASE WHEN TO_CHAR(d.INSERTDATETIME, 'HH24:MI:ss') BETWEEN '15:30:01' AND '16:30:00' THEN d.SOLUONG ELSE 0 END) AS TIME8,\n        SUM(CASE WHEN TO_CHAR(d.INSERTDATETIME, 'HH24:MI:ss') BETWEEN '16:30:01' AND '18:00:00' THEN d.SOLUONG ELSE 0 END) AS TIME9,\n        SUM(CASE WHEN TO_CHAR(d.INSERTDATETIME, 'HH24:MI:ss') BETWEEN '18:00:01' AND '20:30:00' THEN d.SOLUONG ELSE 0 END) AS TIME10,\n        SUM(d.SOLUONG) AS SUM_TOTAL,\n        MAX(c.errorname_vn) AS errorname_vn\n    FROM may_errordetailtest d\n    LEFT JOIN may_errorconfig c ON d.ERRORCODE = c.errorco\n    WHERE d.SOLUONG > 0\n    GROUP BY d.ERRORCODE, d.DEPARTMENTID, TRUNC(d.INSERTDATETIME)\n)\nSELECT\n    dt.ERRORCODE,\n    dt.DEPARTMENTID,\n    sl.STYLE_LIST,\n    dt.DATETIME,\n    dt.TIME1, dt.TIME2, dt.TIME3, dt.TIME4, dt.TIME5,\n    dt.TIME6, dt.TIME7, dt.TIME8, dt.TIME9, dt.TIME10,\n    dt.SUM_TOTAL,\n    dt.errorname_vn\nFROM data_cte dt\nLEFT JOIN style_list_cte sl\n    ON dt.DEPARTMENTID = sl.DEPARTMENTID\n   AND dt.DATETIME = sl.DATETIME\n",
+    "ViewInfo": {
+      "ViewName": "VW_MAY_REPORT_ALTRAA",
+      "IsUpdatable": true,
+      "QueryColumns": []
+    }
+  },
+  "Relations": [],
+  "Indexes": []
+}

@@ -1,0 +1,137 @@
+{
+  "$type": "Forguncy.SaveLoad.ServerCommandSaveData, ServerDesignerCommon",
+  "Name": "query2",
+  "Enabled": true,
+  "Triggers": {
+    "$type": "System.Collections.Generic.List`1[[Forguncy.SaveLoad.TriggerSaveDataBase, ServerDesignerCommon]], System.Private.CoreLib",
+    "$values": [
+      {
+        "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+        "Permission": {
+          "$type": "Forguncy.SaveLoad.ServerCommandPermissionSaveData, ServerDesignerCommon",
+          "PermissionData": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+            "permissionResource": {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+            },
+            "permissionBindings": {
+              "$type": "System.Collections.Generic.List`1[[Forguncy.RbacPermission.Core.Impl.ServerCommand.IServerCommandPermissionBinding, Forguncy.RbacPermission.Core]], System.Private.CoreLib",
+              "$values": [
+                {
+                  "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+                  "roleNames": {
+                    "$type": "System.Collections.Generic.List`1[[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                    "$values": [
+                      "FGC_LoginUser"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Parameters": {
+          "$type": "System.Collections.Generic.List`1[[Forguncy.SaveLoad.PostRequestParameterSaveData, ServerDesignerCommon]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Forguncy.SaveLoad.PostRequestParameterSaveData, ServerDesignerCommon",
+              "Name": "Top",
+              "DataValidationInfo": {
+                "$type": "Forguncy.SaveLoad.DataValidationInfoSaveData, ServerDesignerCommon"
+              }
+            },
+            {
+              "$type": "Forguncy.SaveLoad.PostRequestParameterSaveData, ServerDesignerCommon",
+              "Name": "DEPARTMENTID",
+              "DataValidationInfo": {
+                "$type": "Forguncy.SaveLoad.DataValidationInfoSaveData, ServerDesignerCommon"
+              }
+            },
+            {
+              "$type": "Forguncy.SaveLoad.PostRequestParameterSaveData, ServerDesignerCommon",
+              "Name": "STYLE",
+              "DataValidationInfo": {
+                "$type": "Forguncy.SaveLoad.DataValidationInfoSaveData, ServerDesignerCommon"
+              }
+            },
+            {
+              "$type": "Forguncy.SaveLoad.PostRequestParameterSaveData, ServerDesignerCommon",
+              "Name": "DATES",
+              "DataValidationInfo": {
+                "$type": "Forguncy.SaveLoad.DataValidationInfoSaveData, ServerDesignerCommon"
+              }
+            },
+            {
+              "$type": "Forguncy.SaveLoad.PostRequestParameterSaveData, ServerDesignerCommon",
+              "Name": "DATEE",
+              "DataValidationInfo": {
+                "$type": "Forguncy.SaveLoad.DataValidationInfoSaveData, ServerDesignerCommon"
+              }
+            }
+          ]
+        },
+        "InvokeTriggerTestData": {
+          "$type": "Forguncy.SaveLoad.InvokeTriggerTestDataSaveData, ServerDesignerCommon",
+          "UserName": "Administrator"
+        }
+      }
+    ]
+  },
+  "Commands": {
+    "$type": "System.Collections.Generic.List`1[[GrapeCity.Forguncy.Commands.Command, Forguncy.Commands]], System.Private.CoreLib",
+    "$values": [
+      {
+        "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+        "ConnStrId": "Oracle3",
+        "Params": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.ValueTuple`2[[System.Object, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib]], System.Private.CoreLib"
+        },
+        "SqlStatement": "truncate table may_report_temp",
+        "ID": "eedb3e6faa4a49cc9e1e5c1e48109f38",
+        "BreakpointIdentity": "9519bafe-947b-4d6f-9a3b-db1a791ef4d9"
+      },
+      {
+        "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+        "ConnStrId": "Oracle3",
+        "Params": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.ValueTuple`2[[System.Object, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib]], System.Private.CoreLib",
+          "DATES": {
+            "$type": "System.ValueTuple`2[[System.Object, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+            "Item1": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=DATES"
+            },
+            "Item2": 126
+          },
+          "DATEE": {
+            "$type": "System.ValueTuple`2[[System.Object, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+            "Item1": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=DATEE"
+            },
+            "Item2": 126
+          },
+          "Top": {
+            "$type": "System.ValueTuple`2[[System.Object, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+            "Item1": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=Top"
+            },
+            "Item2": 126
+          },
+          "DEPARTMENTID": {
+            "$type": "System.ValueTuple`2[[System.Object, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+            "Item1": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=DEPARTMENTID"
+            },
+            "Item2": 126
+          }
+        },
+        "SqlStatement": "INSERT INTO may_report_temp (\r\n    ERRORCODE, \r\n    DEPARTMENTID, \r\n    ORG_ID, \r\n    STYLE, \r\n    TOTAL_SOLUONG, \r\n    LATEST_ERRORPIC, \r\n    RK, \r\n    ERRORNAME_VN, \r\n    ERRORNAME_CN, \r\n    NAME_S, \r\n    NAME_V, \r\n    COLUMN1, \r\n    COLUMN2, \r\n    COLUMN3\r\n)\r\nSELECT \r\n    a.ERRORCODE, \r\n    a.DEPARTMENTID, \r\n    a.org_id,\r\n    a.STYLE, \r\n    a.TOTAL_SOLUONG, \r\n    a.LATEST_ERRORPIC, \r\n    a.RK, \r\n    b.errorname_vn, \r\n    b.errorname_cn, \r\n    c.name_s, \r\n    c.name_v, \r\n    c.column1, \r\n    c.column2, \r\n    c.column3\r\nFROM (\r\n    SELECT \r\n        ERRORCODE, \r\n        DEPARTMENTID, \r\n        org_id,\r\n        STYLE, \r\n        SUM(SOLUONG) AS TOTAL_SOLUONG, \r\n        (SELECT errorpic\r\n         FROM may_errordetailtest t2 \r\n         WHERE t2.ERRORCODE = t1.ERRORCODE \r\n           AND t2.DEPARTMENTID = t1.DEPARTMENTID \r\n           AND t2.STYLE = t1.STYLE \r\n           AND t2.INSERTDATETIME = (SELECT MAX(INSERTDATETIME) \r\n                                    FROM may_errordetailtest t3 \r\n                                    WHERE t3.ERRORCODE = t1.ERRORCODE \r\n                                      AND t3.DEPARTMENTID = t1.DEPARTMENTID \r\n                                      AND t3.STYLE = t1.STYLE \r\n                                      AND t3.INSERTDATETIME >= TO_DATE(:DATES, 'YYYYMMDD hh24:mi:ss') \r\n                                      AND t3.INSERTDATETIME <= TO_DATE(:DATEE, 'YYYYMMDD hh24:mi:ss')\r\n                                      AND t3.ERRORPIC IS NOT NULL) \r\n         AND t2.ERRORPIC IS NOT NULL) AS LATEST_ERRORPIC,\r\n        RANK() OVER (PARTITION BY DEPARTMENTID ORDER BY SUM(SOLUONG) DESC, ERRORCODE aSC, STYLE asc) AS RK\r\n    FROM may_errordetailtest t1\r\n    WHERE INSERTDATETIME >= TO_DATE(:DATES, 'YYYYMMDD hh24:mi:ss') \r\n                             AND INSERTDATETIME <= TO_DATE(:DATEE, 'YYYYMMDD hh24:mi:ss')\r\n    GROUP BY ERRORCODE, DEPARTMENTID, STYLE, org_id\r\n) a\r\nLEFT JOIN may_errorconfig b ON a.ERRORCODE = b.errorco\r\nLEFT JOIN rd_wc_m c ON c.wk_no = a.DEPARTMENTID AND c.org_id = a.org_id\r\nWHERE (:Top IS NULL OR a.RK <= :Top)\r\nand (:DEPARTMENTID IS NULL OR DEPARTMENTID=:DEPARTMENTID)\r\n",
+        "ID": "48d19807c88443aeaf9c36c71cad7c3c",
+        "BreakpointIdentity": "03a1e098-b235-42be-a130-eacfe4da078a"
+      }
+    ]
+  }
+}

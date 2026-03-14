@@ -1,0 +1,70 @@
+{
+  "Name": "VW_SHOE_NO",
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "VARCHAR2",
+      "MaxLength": -1,
+      "Name": "SHOE_NO",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "VARCHAR2",
+      "MaxLength": -1,
+      "Name": "SHOE_KIND",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "VARCHAR2",
+      "MaxLength": -1,
+      "Name": "KIND_NAME",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "VARCHAR2",
+      "MaxLength": -1,
+      "Name": "PROD_NO",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "VARCHAR2",
+      "MaxLength": -1,
+      "Name": "COLORWAY",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "VARCHAR2",
+      "MaxLength": -1,
+      "Name": "RD_CUSTID",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "VARCHAR2",
+      "MaxLength": -1,
+      "Name": "RD_CUSTNAME",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "DataBaseType": "6db454c0-531c-4395-9122-921a18942902",
+    "ConnectionId": "Oracle1",
+    "SourceTableName": "VW_SHOE_NO",
+    "SourceTableSchema": "",
+    "CreateViewSql": "SELECT a.shoe_no, a.shoe_kind, gg_0002.gf_code_name@vndb(a.org_id, 'CD_SHOETYPE', a.shoe_kind, 'S') kind_name, b.prod_no, b.color_note colorway, a.rd_custid, gg_2101.gf_custnm_j@vndb(a.org_id,a.rd_custid,'S') rd_custname\n  FROM rd_style@vndb a, vw_rd_prod@vndb b\n WHERE a.shoe_no = b.shoe_no\n   AND a.status = 7\n   AND b.status = 7\n\n ",
+    "ViewInfo": {
+      "ViewName": "VW_SHOE_NO",
+      "IsUpdatable": true,
+      "QueryColumns": []
+    }
+  },
+  "Relations": [],
+  "Indexes": []
+}

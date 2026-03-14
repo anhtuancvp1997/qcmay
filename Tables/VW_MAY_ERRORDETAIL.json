@@ -1,0 +1,111 @@
+{
+  "Name": "VW_MAY_ERRORDETAIL",
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "NVARCHAR2",
+      "MaxLength": -1,
+      "Name": "ERRORCODE",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "NVARCHAR2",
+      "MaxLength": -1,
+      "Name": "DEPARTMENTID",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "NVARCHAR2",
+      "MaxLength": -1,
+      "Name": "STYLE",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "DATE",
+      "MaxLength": -1,
+      "Name": "DATETIME",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "NUMBER",
+      "MaxLength": -1,
+      "Name": "TIME1",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "NUMBER",
+      "MaxLength": -1,
+      "Name": "TIME2",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "NUMBER",
+      "MaxLength": -1,
+      "Name": "TIME3",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "NUMBER",
+      "MaxLength": -1,
+      "Name": "TIME4",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "NUMBER",
+      "MaxLength": -1,
+      "Name": "TIME5",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "NUMBER",
+      "MaxLength": -1,
+      "Name": "TIME6",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "NUMBER",
+      "MaxLength": -1,
+      "Name": "SUM_TOTAL",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "DataBaseType": "6db454c0-531c-4395-9122-921a18942902",
+    "ConnectionId": "Oracle3",
+    "SourceTableName": "VW_MAY_ERRORDETAIL",
+    "SourceTableSchema": "",
+    "CreateViewSql": "SELECT\n    ERRORCODE,\n    DEPARTMENTID,\n    STYLE,\n    -- Th?m c?t DATE_TIME (ng?y c?a INSERTDATETIME)\n    TRUNC(INSERTDATETIME) AS DATETIME,\n    -- TIME1: T? 7:30 d?n 9:30\n    SUM(CASE\n            WHEN TO_CHAR(INSERTDATETIME, 'HH24:MI:ss') BETWEEN '07:30:01' AND '09:30:00'\n            THEN SOLUONG\n            ELSE null\n        END) AS TIME1,\n    -- TIME2: T? 9:30 d?n 11:30\n    SUM(CASE\n            WHEN TO_CHAR(INSERTDATETIME, 'HH24:MI:ss') BETWEEN '09:30:01' AND '11:30:00'\n            THEN SOLUONG\n            ELSE null\n        END) AS TIME2,\n    -- TIME3: T? 11:30 d?n 14:30\n    SUM(CASE\n            WHEN TO_CHAR(INSERTDATETIME, 'HH24:MI:ss') BETWEEN '11:30:01' AND '14:30:00'\n            THEN SOLUONG\n            ELSE null\n        END) AS TIME3,\n    -- TIME4: T? 14:30 d?n 16:30\n    SUM(CASE\n            WHEN TO_CHAR(INSERTDATETIME, 'HH24:MI:ss') BETWEEN '14:30:01' AND '16:30:00'\n            THEN SOLUONG\n            ELSE null\n        END) AS TIME4,\n    -- TIME5: T? 16:30 d?n 18:30\n    SUM(CASE\n            WHEN TO_CHAR(INSERTDATETIME, 'HH24:MI:ss') BETWEEN '16:30:01' AND '18:30:00'\n            THEN SOLUONG\n            ELSE null\n        END) AS TIME5,\n    -- TIME6: T? 18:30 d?n 20:30\n    SUM(CASE\n            WHEN TO_CHAR(INSERTDATETIME, 'HH24:MI:ss') BETWEEN '18:30:01' AND '20:30:00'\n            THEN SOLUONG\n            ELSE null\n        END) AS TIME6,\n    -- SUM_TOTAL: T?ng c?a t?t c? c?c TIME\n    SUM(CASE\n            WHEN TO_CHAR(INSERTDATETIME, 'HH24:MI:ss') BETWEEN '07:30:01' AND '20:30:00' THEN SOLUONG\n            ELSE null\n        END) AS SUM_TOTAL\nFROM may_errordetailtest\nwhere SOLUONG > 0\nGROUP BY ERRORCODE, DEPARTMENTID, STYLE, TRUNC(INSERTDATETIME)\n",
+    "ViewInfo": {
+      "ViewName": "VW_MAY_ERRORDETAIL",
+      "IsUpdatable": true,
+      "QueryColumns": [
+        "ERRORCODE",
+        "DEPARTMENTID",
+        "STYLE",
+        "DATETIME"
+      ]
+    }
+  },
+  "Relations": [
+    {
+      "PrimaryTable": "MAY_ERRORCONFIG",
+      "PrimaryColumn": "ERRORCO",
+      "ForeignTable": "VW_MAY_ERRORDETAIL",
+      "ForeignColumn": "ERRORCODE"
+    }
+  ],
+  "Indexes": []
+}

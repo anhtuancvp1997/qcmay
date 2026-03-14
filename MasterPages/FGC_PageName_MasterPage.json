@@ -1,0 +1,64 @@
+{
+  "Rows": {
+    "Count": 38
+  },
+  "Cols": {
+    "Count": 55
+  },
+  "Values": {
+    "30,4": "This is Forguncy's built-in page. To match your app, you can modify this page."
+  },
+  "AttachInfos": {
+    "4,4": {
+      "IsPlaceHolderCell": true
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 12.0,
+        "Foreground": 0,
+        "HorizontalAlignment": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Text 1 50",
+        "Center",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "30,4": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 2,
+      "Underline": false,
+      "Strikethrough": false
+    }
+  },
+  "Spans": [
+    "4,4,26,47",
+    "30,4,2,47"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [],
+    "IsBuiltInPage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "Name": "9d382752-f3ea-48a3-bb53-d6d47ed4c55a.png",
+      "StyleInfo": {
+        "Fill": "Accent 1 0"
+      },
+      "IsAutomaticFill": false,
+      "Location": "80,0",
+      "Size": "940,60"
+    }
+  ]
+}//ppZ91zzCuD/zZVWqn+sZt6bpmNbmvXVALSR0RqGO04iV8VdCVgeLuxJeSOIErv6f43UMiZxbvm0pFsQvxxF85ypm0UfNrEDWTVFxY32+igpa8OG7BhhVE7HPjb0kWIxJ3UPOIspuHhsXB8fXTYsuw1BZh38/AqCujmL4Hfhm0HR6eKGrSThl3Ez8YKjzRJ2SDE5loUnnpQWzcSSTOtb3AbsE5tnOEONXZvH9qbAWXKWxgo1q3ago5riS/crrzEDHWiMPmGyMmkIm5BnzqdyFcRhnSa9ZO2vhWLh4zJ+N4cTiNjCs/idYMEyAxgXaNoJBCDH42dIQjSHDV60oFQ2vLrP1axTp46JRHlc8romM46WbJ7grWIq+L0+pKmbsX3XlA3UTAjNPxa1zA+QOvpiImz2BloOLv70rJf6QyEA9aBe9mR+jxBPnyHe1cLUwt3RtNLTMk6tXt+0kNTOfr8jAirWRIA57je7o9wy4mb7safgEhQ9TeEx226yFG8ca3SUyOGTWABa1Rv/aUPuuXg5t6osy8yJOlrS3t8atAGswF4vHMKKGkB0Fpfh6oppF1s5DtKK+4RlQmfVLPNjYB0tMLyxGZr0AeUtbnfHE7irCpRXKxdRicb5k32a4yZMa4tFLwA+8ThvvXogDcJxwivjM8WjKaSNC9y0bXPknlvit0zzdwUcMcTkr9qj7Z6yzSvmnum/jbCnKUcFkM4E+gz8Hg/OiEGGh2eQZkNBXgDyeKH0Dts8q6h39cZoVK5pxA2dWygxtf1hjCxSnMus8qVegxt8HykVLMetRNOHc61NrmHQ0c2AJ5II5Yp2LmG7XFjJ2k1BRLwYOO/8ESBpjyHG3JwZx505AjJR+wwqun5DROuimd9A+Wu2SQTeo2TWL+fhLZctPm3YZFK93iWkUeqTjHw==|920

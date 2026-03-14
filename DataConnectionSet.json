@@ -1,0 +1,27 @@
+[
+  {
+    "ConnectionString": "DATA SOURCE=aps;USER ID=aps;PERSIST SECURITY INFO=True;PASSWORD=aps888",
+    "DataBaseType": "cbdb540e-ded5-415e-b8cd-5b1dba43a89e",
+    "ID": "Oracle1"
+  },
+  {
+    "ConnectionString": "DATA SOURCE=orcl36;USER ID=aps01;PERSIST SECURITY INFO=True;PASSWORD=aps01",
+    "DataBaseType": "cbdb540e-ded5-415e-b8cd-5b1dba43a89e",
+    "ID": "Oracle3"
+  },
+  {
+    "ConnectionString": "Data Source=192.168.108.41;Initial Catalog=stkdb;Persist Security Info=True;User ID=vn00;Password=vnst2019",
+    "DataBaseType": "347a1ed5-25f0-4a4b-846c-8d69cedcf33d",
+    "ID": "SqlServer1"
+  },
+  {
+    "ConnectionString": "Data Source=192.168.108.32;Initial Catalog=stkdb;Persist Security Info=True;User ID=hre01;Password=hre01.vnst",
+    "DataBaseType": "347a1ed5-25f0-4a4b-846c-8d69cedcf33d",
+    "ID": "SqlServer2"
+  },
+  {
+    "ConnectionString": "Data Source=192.168.151.23;Initial Catalog=stkdb;Persist Security Info=True;User ID=hre01;Password=hre01.vnst",
+    "DataBaseType": "347a1ed5-25f0-4a4b-846c-8d69cedcf33d",
+    "ID": "SqlServer3"
+  }
+]

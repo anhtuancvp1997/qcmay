@@ -15,11 +15,6 @@
     "ID": "SqlServer1"
   },
   {
-    "ConnectionString": "Data Source=192.168.108.32;Initial Catalog=stkdb;Persist Security Info=True;User ID=hre01;Password=hre01.vnst",
-    "DataBaseType": "347a1ed5-25f0-4a4b-846c-8d69cedcf33d",
-    "ID": "SqlServer2"
-  },
-  {
     "ConnectionString": "Data Source=192.168.151.23;Initial Catalog=stkdb;Persist Security Info=True;User ID=hre01;Password=hre01.vnst",
     "DataBaseType": "347a1ed5-25f0-4a4b-846c-8d69cedcf33d",
     "ID": "SqlServer3"

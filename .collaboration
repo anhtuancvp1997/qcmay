@@ -309,7 +309,16 @@
   },
   {
     "ModuleName": "DataContectionSet",
-    "ModuleType": 25
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-VFMKB8R\\yn6810",
+      "Email": "anhtuancvp1997@gmail.com"
+    },
+    "LockDateTime": "2026-03-14T08:24:32.0822695+07:00",
+    "ModuleType": 25,
+    "ToRemoveFiles": [
+      "DataConnectionSet.json"
+    ]
   },
   {
     "ModuleName": "Upload",

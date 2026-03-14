@@ -285,15 +285,42 @@
   },
   {
     "ModuleName": "Image/Screenshot 2022-12-13 151048.png",
-    "ModuleType": 38
+    "State": 2,
+    "LockedBy": {
+      "UserName": "DESKTOP-VFMKB8R\\yn6810",
+      "Email": "anhtuancvp1997@gmail.com"
+    },
+    "LockDateTime": "2026-03-14T08:15:21.7481667+07:00",
+    "ModuleType": 38,
+    "ToRemoveFiles": [
+      "image\\Screenshot 2022-12-13 151048.png"
+    ]
   },
   {
     "ModuleName": "Image/Screenshot 2022-12-13 151119.png",
-    "ModuleType": 38
+    "State": 2,
+    "LockedBy": {
+      "UserName": "DESKTOP-VFMKB8R\\yn6810",
+      "Email": "anhtuancvp1997@gmail.com"
+    },
+    "LockDateTime": "2026-03-14T08:15:21.748185+07:00",
+    "ModuleType": 38,
+    "ToRemoveFiles": [
+      "image\\Screenshot 2022-12-13 151119.png"
+    ]
   },
   {
     "ModuleName": "Image/Screenshot 2022-12-13 151145.png",
-    "ModuleType": 38
+    "State": 2,
+    "LockedBy": {
+      "UserName": "DESKTOP-VFMKB8R\\yn6810",
+      "Email": "anhtuancvp1997@gmail.com"
+    },
+    "LockDateTime": "2026-03-14T08:15:21.7481885+07:00",
+    "ModuleType": 38,
+    "ToRemoveFiles": [
+      "image\\Screenshot 2022-12-13 151145.png"
+    ]
   },
   {
     "ModuleName": "Image/rubber.png",

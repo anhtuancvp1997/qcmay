@@ -193,17 +193,7 @@
   },
   {
     "ModuleName": "PCPage/NhapMaSoThe",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-VFMKB8R\\yn6810",
-      "Email": "anhtuancvp1997@gmail.com"
-    },
-    "LockDateTime": "2026-03-27T09:48:21.4640424+07:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\NhapMaSoThe.json",
-      "Pages\\NhapMaSoThe.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/NhapMaSoThe1",
